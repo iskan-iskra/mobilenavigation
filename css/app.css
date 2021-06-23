@@ -1,0 +1,1329 @@
+@import url(../css/font_inter_regular.css);
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  height: 120vh;
+  background-color: #F3F5F9;
+}
+
+header {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.wraper_up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  border-bottom: 0.0625rem solid #e5e8ed;
+  font-family: "inter regular";
+  font-weight: 400;
+}
+.wraper_up .get_app {
+  text-decoration: none;
+  color: #5b6987;
+  font-size: 0.75rem;
+}
+.wraper_up .get_app::before {
+  content: "New";
+  font-weight: 500;
+  font-size: 0.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #031b4e;
+  background-color: #00d7d2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.625rem;
+  cursor: default;
+}
+.wraper_up .get_app::after {
+  content: "";
+  padding: 0.44rem;
+  margin-left: 0.2rem;
+  background-image: url(../img/>.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wraper_up .get_app:hover {
+  color: #0069ff;
+}
+.wraper_up .get_app:hover::after {
+  background-image: url(../img/>2.svg);
+}
+.wraper_up .wraper_inner {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.6rem;
+}
+.wraper_up .wraper_inner .item {
+  padding-left: 1.5rem;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #5b6987;
+}
+.wraper_up .wraper_inner .item:hover {
+  color: #0069ff;
+}
+
+.wraper_down {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.5rem;
+  align-items: center;
+  font-family: "inter regular";
+}
+.wraper_down .logo {
+  background-image: url(../img/logo.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-bottom: 0.5rem;
+  min-height: 2rem;
+  min-width: 11.93rem;
+}
+.wraper_down #menu_button {
+  display: none;
+}
+.wraper_down .menu_button {
+  visibility: hidden;
+  opacity: 0;
+}
+.wraper_down .super_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.wraper_down .menu {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding-left: 3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #031B4F;
+}
+.wraper_down .menu .item {
+  position: relative;
+  padding: 1.5rem 0;
+  padding-right: 2.5rem;
+  text-align: left;
+  cursor: pointer;
+}
+.wraper_down .menu .item:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item:hover .sub_menu {
+  visibility: visible;
+  opacity: 1;
+}
+.wraper_down .menu .item::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 1.5rem;
+  border: 0.1rem solid #5b6886;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.wraper_down .menu .item .sub_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 106.6px;
+  border-top: 0.125rem solid #e5e8ed;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 33rem;
+  background-color: #fff;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  cursor: default;
+}
+.wraper_down .menu .item .sub_menu .superwraper {
+  width: 75rem;
+  padding: 0 0.25rem;
+  display: flex;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 {
+  min-width: 30%;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: #031b4e;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.125rem solid #e5e8ed;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 40px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Drop:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 80px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Kuber:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 120px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .App:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .App:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 160px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Data:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 200px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Spaces:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 240px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Overview:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 280px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tutorials:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 320px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Questions:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing.svg);
+  background-size: 100%;
+  background-position-y: 360px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper1 .Tools:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 + .wraper1 {
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .links1 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .links1 .link1 {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper1 .links1 .link1:hover {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .wraper2_row {
+  display: flex;
+  flex-direction: row;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links_title .minilogo {
+  min-width: 2rem;
+  height: 2rem;
+  background-image: url(../img/drawing4.svg);
+  background-size: 100%;
+  background-position-y: 2rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links_title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031b4e;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links2 .link2 {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Compute .links2 .link2:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links_title .minilogo {
+  min-width: 2rem;
+  height: 2rem;
+  background-image: url(../img/drawing4.svg);
+  background-size: 100%;
+  background-position-y: 4rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links_title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031b4e;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links2 .link2 {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Managed_databases .links2 .link2:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links_title .minilogo {
+  min-width: 2rem;
+  height: 2rem;
+  background-image: url(../img/drawing4.svg);
+  background-size: 100%;
+  background-position-y: 6rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links_title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031b4e;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links2 .link2 {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Developer_tools .links2 .link2:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links_title .minilogo {
+  min-width: 2rem;
+  height: 2rem;
+  background-image: url(../img/drawing4.svg);
+  background-size: 100%;
+  background-position-y: 8rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links_title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031b4e;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links2 .link2 {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Storage .links2 .link2:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links_title .minilogo {
+  min-width: 2rem;
+  height: 2rem;
+  background-image: url(../img/drawing4.svg);
+  background-size: 100%;
+  background-position-y: 10rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links_title .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031b4e;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links2 .link2 {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper2 .Networking .links2 .link2:hover {
+  color: #006aff;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 {
+  display: flex;
+  flex-direction: column;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 + .wraper3 {
+  margin-left: 3rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 40px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Hosting:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 80px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Apps:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 120px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Video:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 160px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Game:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 200px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Cloud_vpn:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 240px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Big_data:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 280px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Startup:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 320px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .SaaS:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 360px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Agency:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed .minilogo {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../img/drawing2.svg);
+  background-size: 100%;
+  background-position-y: 400px;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: none;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed .info .title {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #031b4e;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed .info .description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed:hover .title, .wraper_down .menu .item .sub_menu .superwraper .wraper3 .Managed:hover .description {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.0625rem;
+  color: #031b4e;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .PHP_ubuntu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  align-items: center;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .PHP_ubuntu .mediumlogo {
+  min-width: 4.5rem;
+  height: 4.5rem;
+  background-image: url(../img/drawing3.svg);
+  background-size: 100%;
+  background-position-y: 4.5rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .PHP_ubuntu .title {
+  max-width: 18rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .PHP_ubuntu:hover .title {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Database_sharing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  align-items: center;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Database_sharing .mediumlogo {
+  min-width: 4.5rem;
+  height: 4.5rem;
+  background-image: url(../img/drawing3.svg);
+  background-size: 100%;
+  background-position-y: 9rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Database_sharing .title {
+  max-width: 18rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Database_sharing:hover .title {
+  color: #006AFF;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Docker {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  text-decoration: none;
+  align-items: center;
+  letter-spacing: initial;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Docker .mediumlogo {
+  min-width: 4.5rem;
+  height: 4.5rem;
+  background-image: url(../img/drawing3.svg);
+  background-size: 100%;
+  background-position-y: 13.5rem;
+  margin-right: 1rem;
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Docker .title {
+  max-width: 18rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wraper_down .menu .item .sub_menu .superwraper .wraper4 .Docker:hover .title {
+  color: #006AFF;
+}
+.wraper_down .menu .link {
+  text-decoration: none;
+  padding: 1.5rem 0;
+  padding-right: 1.5rem;
+}
+.wraper_down .menu .link:hover {
+  color: #006aff;
+}
+.wraper_down .menu .sign {
+  align-self: center;
+  margin-left: auto;
+}
+.wraper_down .menu .sign .button {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  color: #006AFF;
+  border: 0.125rem solid #006AFF;
+  transition: color 0.5s, background-color 0.5s;
+}
+.wraper_down .menu .sign .button:hover {
+  background-color: #006AFF;
+  color: #fff;
+}
+.wraper_down .menu .sign .hoverred_button {
+  background-color: #006AFF;
+  color: #fff;
+}
+.wraper_down .menu .sign .button + .button {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    position: absolute;
+  }
+
+  .wraper_up {
+    display: none;
+  }
+
+  .wraper_down {
+    position: relative;
+  }
+  .wraper_down .logo {
+    margin: 12.5px 0;
+  }
+  .wraper_down .sign {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .wraper_down .menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .wraper_down .menu_button {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    right: 2rem;
+    top: 1.1rem;
+    padding-bottom: 1.65rem;
+  }
+  .wraper_down .menu_button .part {
+    height: 0.2rem;
+    width: 1.4rem;
+    background-color: #5b6886;
+    margin-top: 0.3rem;
+    transform-origin: left;
+    transition: transform 0.2s linear, visibility 0.2s 0.2s linear, opacity 0.2s 0.2s linear;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu_button .part {
+    transition: transform 0.2s 0.2s linear, visibility 0.2s linear, opacity 0.2s linear;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu_button .first {
+    transform: rotate(45deg);
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu_button .second {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu_button .third {
+    transform: rotate(-45deg);
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: 0;
+    flex-grow: none;
+    padding-left: none;
+    background-color: #fff;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu .link {
+    font-size: 1.125rem;
+    position: relative;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu .link:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 2.5rem);
+    border-bottom: 0.125rem solid #e5e8ed;
+    margin-right: 2.5rem;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu .item {
+    font-size: 1.125rem;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu .item::after {
+    display: none;
+  }
+  .wraper_down #menu_button:checked + .super_menu .menu .item .sub_menu {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    margin-top: 1rem;
+    height: max-content;
+  }
+  .wraper_down #menu_button:checked + .super_menu .sign {
+    visibility: visible;
+    margin: 0;
+    width: calc(100% - 2.5rem);
+    align-self: flex-start;
+    opacity: 1;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .wraper_down #menu_button:checked + .super_menu .sign .button {
+    padding: 0.5rem 10rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .superwraper {
+    flex-direction: column;
+  }
+  .superwraper .wraper1 {
+    border: none !important;
+    margin-left: 0 !important;
+  }
+  .superwraper .wraper2 {
+    margin-left: -2rem;
+  }
+  .superwraper .wraper3 + .wraper3 {
+    margin-left: 0rem !important;
+  }
+  .superwraper .wraper4 {
+    margin-left: 0 !important;
+  }
+
+  .button {
+    padding: 0.5rem 8rem !important;
+  }
+}
+@media screen and (max-width: 710px) {
+  .wraper2_row {
+    flex-direction: column !important;
+  }
+
+  .button {
+    padding: 0.5rem 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
